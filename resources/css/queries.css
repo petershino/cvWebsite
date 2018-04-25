@@ -1,0 +1,193 @@
+/* Big tablet to 1200px (widths smaller that the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    
+    body { font-size: 18px; }
+    
+    .container-gray {
+    top: 100px;
+    left: 90px;
+    padding: 15px 15px 10px 20px;
+    font-size: 90%;
+    }
+
+    .time-line-ul {
+        list-style: disc;
+        padding: 0 0 20px 20px;
+    }
+
+    .time-line-ul li {
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    
+    .img-div { height: 200px; }
+    
+    .overlay { height: 200px;}
+    
+    .sec-4-container { top: 90px; }
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+    .section-two,
+    .section-three{ font-size: 16px; }
+    
+    .container-gray { padding: 20px 30px 20px 20px; }
+
+    .time-line-ul { padding: 0 0 10px 10px; }
+
+    .time-line-ul li { margin-top: 7px;}
+    
+    .section-three .row { width: 90%;}
+    
+    .image-steps{ margin-left: 40px;}
+    
+    .section-three ul { width: 90%;}
+    
+    .section-three li { padding-top: 3px; }
+    
+    .section-three h2 {
+        font-size: 200%;
+        padding-top: 100px;
+    }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    
+    body { font-size: 14px;}
+    
+    .container-gray {
+        top: 80px;
+        left: 40px;
+        padding: 10px 10px 10px 15px;
+    }
+    
+    .time-line-ul { padding: 0 3px 10px 8px; }
+
+    .time-line-ul li { margin-top: 7px;}
+    
+    .section-one li { font-size: 120%;}
+    
+    .section-three h2 {
+    margin: -15px 0 20px 40px;
+    font-size: 180%;
+    padding-top: 70px;
+    }
+
+    .section-three .row {  width: 100%; }
+    .section-three .col { width: 100%; }
+
+    .section-three ul {
+        width: 80%;
+        margin-left: 15px;
+        padding-left: 30px;
+    }
+    .section-three li {
+        padding-top: 10px;
+        font-weight: 400;
+        text-align: justify;
+        font-size: 90%;
+        line-height: 90%;
+    }
+    .section-three li:first-child {padding-top: 10px;}
+    .section-three li:last-child {padding-bottom: 20px;}
+
+    .image-steps {
+        margin-left: 80px;
+        max-height: 35%;
+        max-width: 35%;
+    }
+
+/*   ------------------  section four ----------------------  */
+    
+    .section-four h2 {margin: 0 0 25px 15px;}
+
+    .sec-4-container { 
+        top: 50px;
+        padding-top: 10px;
+    }
+    
+    .image-container {
+        width: 50%;
+        position: relative;
+    }
+
+    .img-div {
+        height: 200px;
+        width: auto;
+        background-position: center;
+        background-size:cover;
+    }
+    
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4 { width: 100%;}
+
+    /*  hidden description  */
+    .overlay {
+        height: 200px;
+        width: 100%;
+    }
+
+    .desc {
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        padding: 10px;
+        font-size: 90%;
+        text-align: justify;
+    }
+    
+    /*       footer        */
+    
+    footer {
+        font-size: 90%;
+    }
+    
+    footer .col {width: 50%;}
+
+    .footer-nav {
+        list-style: none;
+        float: left;
+    }
+
+    .footer-nav li,
+    .social-links li {
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .footer-nav li:first-child {
+        margin-left: 10px;
+    }
+    .social-links li:last-child {
+        margin-right: 10px;
+    }
+
+    footer p {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 90%;
+        margin-top: 5px;
+    }
+
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+    body { font-size: 11px;}
+    
+    .container-gray {
+        top: 35px;
+        left: 20px;
+        padding: 10px 10px 10px 15px;
+        max-width: 80%;
+    }
+}
+

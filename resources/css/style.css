@@ -1,0 +1,436 @@
+/*    Basic setup    */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+section {
+    height: 100vh;
+    min-height: 100vh;
+    /*           -------------------------------- Problem --------------------------------------     */
+    overflow: hidden;
+}
+
+section:focus {
+    outline: 0;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clearfix { zoom: 1;}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*  ----------------------   */
+/*     Reusable components   */
+/*  ----------------------   */
+
+/*     Headings   */
+
+h2 {
+    font-size: 180%;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h3 {
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+/*   paragraphs    */
+
+/*   hyperlinks    */
+
+a:link, 
+a:visited {
+    text-decoration: none;
+    color: #555;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #555;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover, 
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+a:focus{
+    outline:0;
+}
+
+/*  -----------------------  */
+/*        TOP SECTION        */
+/*  -----------------------  */
+
+.section-one {
+    background-color: rgba(235, 235, 235, 0.68);
+}
+
+header{
+    position: relative;
+   /* height: 100%;   */
+    min-height: inherit;
+}
+
+.section-one h2 {
+    margin-bottom: 0;
+}
+.section-one h2:last-child {
+    padding-bottom: 100px;
+}
+
+.main-text {
+    /*-------------------------------------------------------------- Problem --------------  */
+    /*   min-height: 40%;    proste na queries zmensime text a vsetko, aby to nebol problem   */
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+/*      Main Navigation    */
+
+.main-nav{
+    float: right;
+    margin-right: 40px;
+    font-weight: 400;
+}
+
+.section-one ul {
+    list-style: none;
+}
+
+.section-one li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 80%;
+}
+
+/*      STICKY Navigation    */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(78, 78, 78, 0.57);
+    padding-bottom: 6px;
+    box-shadow: 0 1px 1px #f8f8f8;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-right: 40px;
+    padding-bottom: 3px;
+}
+
+.sticky a:link, 
+.sticky a:visited {
+    color: #fff;
+    border-bottom: none;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    padding-bottom: 2px;
+}
+
+.sticky a:hover, 
+.sticky a:active {
+    border-bottom: 1px solid #fff;
+}
+
+/*  -----------------------  */
+/*        2nd SECTION        */
+/*  -----------------------  */
+
+.section-two {
+    background-image: url(img/estee-janssens-396889-unsplash-min.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.container-gray {
+    position: relative;
+    top: 130px;
+    left: 100px;
+    color: #fff;
+    max-width: 70%;
+    height: auto;
+    padding: 30px 40px 10px 30px;
+    background-color: rgba(46, 45, 45, 0.7);
+    border-radius: 2px;
+    font-size: 80%;
+    text-align: justify;
+}
+
+.time-line-ul {
+    list-style: disc;
+    padding: 0 0 20px 20px;
+}
+
+.time-line-ul li {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+
+/*  -----------------------  */
+/*        3rd SECTION        */
+/*  -----------------------  */
+
+.section-three {
+    background-color: #f7f7f7;
+    /*=--------------------------------------------------------- Problem -------------------------------------  */
+    overflow-y: auto;
+}
+
+.section-three h2 {
+    margin: -15px 0 20px 240px;
+    font-size: 220%;
+    padding-top: 80px;
+    
+}
+
+.section-three .row {
+    width: 80%;
+}
+
+.section-three ul {
+    width: 80%;
+    float: left;
+    margin-left: 20px;
+}
+.section-three li {
+    padding-top: 10px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.image-steps {
+    height: auto;
+    max-height: 80%;
+    width: auto;
+    max-width: 80%;
+    overflow: hidden;
+/*    margin-left: 20px;    --------------------------------------------- Proeblem-----------------------------   */
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #8d8a8a;
+}
+
+/*  -----------------------  */
+/*        4th SECTION        */
+/*  -----------------------  */
+
+.section-four {
+    position: relative;
+}
+
+.sec-4-container {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+
+.section-four .col {
+    margin: 0;
+}
+
+.section-four h2 {
+    margin: 0 0 30px 40px;
+}
+
+.image-container {
+    width: 25%;
+	margin-top: 30px;
+}
+
+.img-div {
+	height: 300px;
+    width: auto;
+    /* ------------------------------------  treba tu toto??? ------------------------------*/
+	background-position: center;
+	background-size:cover;
+}
+
+/*   background of the pictures   */
+
+.img-1 {
+    background-image: url('img/jon-del-rivero-tri-pic-min.jpg');
+}
+
+.img-2 {
+     background-image: url('img/eli-francis-books=min.jpg');
+}
+
+.img-3 {
+    background-image: url('img/matteo-paganelli-157464-unsplash=min.jpg');
+}
+
+.img-4 {
+    background-image: url('img/helena-lopes-friends-min.jpg');
+}
+
+
+/*  hidden description  */
+
+.overlay {
+	background-color: black;
+	opacity: 0.6;
+	height: 300px;
+	width: 25%;
+	position: absolute;
+	bottom: 0;
+
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.desc {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 25%;
+	position: absolute;
+	bottom: 0;
+	color: #f2f2f2;
+	padding: 20px 20px 20px 20px;
+    font-size: 70%;
+    text-align: justify;
+}
+
+h4 {
+	font-weight: 700;
+}
+
+.display-none {
+	display: none;
+    position: relative;
+}
+
+/* ------  footer  ------- */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgba(78, 78, 78, 0.57);
+    padding: 2px;
+    font-size: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-nav {
+    margin-bottom: -2px;
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    margin-bottom:  -3px;
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: -3px;
+    margin-top: 5px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+.footer-nav li:first-child {
+    margin-left: 40px;
+}
+.social-links li:last-child {
+    margin-right: 15px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 120%;
+}
+
+.ion-social-facebook,
+.ion-social-linkedin {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-linkedin:hover {
+    color: #0077B5;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 90%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    line-height: 90%;
+}
+
+
+/*    Animated CCS effects*/
+
+.js--wp-1 {
+    opacity: 0;
+}
+
+js--wp-1.animated {
+    opacity: 1;
+}
