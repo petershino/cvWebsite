@@ -20,7 +20,6 @@ body {
 section {
     height: 100vh;
     min-height: 100vh;
-    /*           -------------------------------- Problem --------------------------------------     */
     overflow: hidden;
 }
 
@@ -107,8 +106,6 @@ header{
 }
 
 .main-text {
-    /*-------------------------------------------------------------- Problem --------------  */
-    /*   min-height: 40%;    proste na queries zmensime text a vsetko, aby to nebol problem   */
     position: absolute;
     top: 40%;
     left: 5%;
@@ -209,7 +206,6 @@ header{
 
 .section-three {
     background-color: #f7f7f7;
-    /*=--------------------------------------------------------- Problem -------------------------------------  */
     overflow-y: auto;
 }
 
@@ -241,7 +237,6 @@ header{
     width: auto;
     max-width: 80%;
     overflow: hidden;
-/*    margin-left: 20px;    --------------------------------------------- Proeblem-----------------------------   */
     border-radius: 2px;
     box-shadow: 2px 2px 2px #8d8a8a;
 }
@@ -276,7 +271,6 @@ header{
 .img-div {
 	height: 300px;
     width: auto;
-    /* ------------------------------------  treba tu toto??? ------------------------------*/
 	background-position: center;
 	background-size:cover;
 }
